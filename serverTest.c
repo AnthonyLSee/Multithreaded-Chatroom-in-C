@@ -338,7 +338,6 @@ client_session_thread( void * arg )
 			}
 			else												// Send Back messages
 			{	
-				printf("Writing normally\n");
 				sprintf(chatHistory,"%s:%s", username,request); //remove color for chat history
 				chathistoryAdd(chatHistory);
 				writeToAllUsers(userRequestStruct,buffer,WRITETOALL, request);

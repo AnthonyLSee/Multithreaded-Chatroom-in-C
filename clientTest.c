@@ -99,7 +99,7 @@ char * checkUsername(char* user,char* usernameCheckStatus)
 		printf("Validation failed, diconnecting...\n\n");
 		return FAILURE;
 	}
-	else if(strcmp(usernameCheckStatus,NOSPACE) == 0	// CHATROOM FULL
+	else if(strcmp(usernameCheckStatus,NOSPACE) == 0)	// CHATROOM FULL
 	{
 		printf("Chatroom is full, disconnecting...\n\n");
 		return NOSPACE;
